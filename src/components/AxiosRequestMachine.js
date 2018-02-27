@@ -11,6 +11,8 @@ class AxiosRequestMachine extends Component {
       listOfDogs: [],
       listOfPics: []
     }
+    this.viewDogs = this.viewDogs.bind(this)
+    this.resetLists = this.resetLists.bind(this)
   }
 
   componentDidMount() {
@@ -23,11 +25,12 @@ class AxiosRequestMachine extends Component {
   viewDogs(dog) {
     axios
       .get(`https://dog.ceo/api/breed/${dog}/images`)
-      .then(response => console.log(response.data.message))
+      .then(response => this.setState({ listOfPics: response.data.message }))
+      .then(console.log(this.state.listOfPics))
   }
 
   resetLists() {
-    this.setState({ listOfDogs: [], listOfPics: [] })
+    this.setState({ listOfPics: [] })
   }
 
   render() {
