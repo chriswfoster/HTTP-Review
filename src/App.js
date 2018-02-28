@@ -14,8 +14,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          
+          <h1 className="App-title">HTTP Review</h1>
         </header>
         
           <AxiosRequestMachine />
