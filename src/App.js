@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import AxiosRequestMachine from './components/AxiosRequestMachine'
 import './App.css';
+
+//import AxiosRequestMachine component
+import AxiosRequestMachine from './components/AxiosRequestMachine'
 
 class App extends Component {
   constructor(){

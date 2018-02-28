@@ -15,7 +15,11 @@ class DogBreedList extends Component {
         {dog}
       </div>
     ))
-    return <div className="flexList">{doglist}</div>
+    return ( // Return the list of pet breeds.
+    <div className="flexList">
+      {doglist}
+        </div>
+    )
   }
 }
 export default DogBreedList
